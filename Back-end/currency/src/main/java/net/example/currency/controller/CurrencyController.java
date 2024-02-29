@@ -2,6 +2,7 @@ package net.example.currency.controller;
 
 import net.example.currency.entity.Currency;
 import net.example.currency.repository.CurrencyRepository;
+import net.example.currency.repository.UserCurrencyRepository;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.*;
 
@@ -16,6 +17,7 @@ public class CurrencyController {
     public CurrencyController(CurrencyRepository currencyRepository) {
         this.currencyRepository = currencyRepository;
     }
+
     @GetMapping("list")
     public Flux<Currency> getAll() {
         return currencyRepository.findAll();
@@ -34,24 +36,21 @@ public class CurrencyController {
     }
 
     @PutMapping("{id}")
-    public boolean DeleteOne(@PathVariable("id") String id, @RequestBody Currency currency) {
-        Boolean test = false;
+    public void PutOne(@PathVariable("id") String id, @RequestBody Currency currency) {
         try {
-            currency.setId(id);
-            currencyRepository.save(currency);
-            test = true;
+            currencyRepository.updateByCurrency(id, currency.getName()).subscribe();
         } catch (Exception exception) {
             System.out.println("Cet id n'existe pas.");
             exception.fillInStackTrace();
         }
-        return test;
     }
+
 
     @DeleteMapping("{id}")
     public boolean DeleteOne(@PathVariable("id") String id) {
-        Boolean test = false;
+        boolean test = false;
         try {
-            currencyRepository.deleteById(id);
+            currencyRepository.deleteById(id).subscribe();
             test = true;
         } catch (Exception exception) {
             System.out.println("Cet id n'existe pas.");

@@ -11,9 +11,7 @@ password VARCHAR(50)
 
 CREATE TABLE IF NOT EXISTS currency(
 id CHAR(36) NOT NULL PRIMARY KEY,
-name VARCHAR(50),
-id_user CHAR(36),
-CONSTRAINT fk_id_user FOREIGN KEY(id_user) REFERENCES user(id)
+name VARCHAR(50)
 );
 
 CREATE TABLE IF NOT EXISTS exchange(
@@ -24,7 +22,7 @@ id_currency CHAR(36),
 CONSTRAINT fk_id_currency FOREIGN KEY(id_currency) REFERENCES currency(id)
 );
 
-CREATE TABLE IF NOT EXISTS owns (
+CREATE TABLE IF NOT EXISTS usercurrency (
 id CHAR(36) NOT NULL PRIMARY KEY,
   id_user CHAR(36),
   id_currency CHAR(36),
@@ -33,7 +31,7 @@ id CHAR(36) NOT NULL PRIMARY KEY,
   CONSTRAINT fk_currency_id FOREIGN KEY (id_currency) REFERENCES currency(id)
 );
 
--- DROP TABLE owns;
+-- DROP TABLE usercurrency;
 -- DROP TABLE exchange;
 -- DROP TABLE currency;
 -- DROP TABLE user;
