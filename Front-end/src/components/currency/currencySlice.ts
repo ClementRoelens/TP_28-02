@@ -18,12 +18,28 @@ export const getOneCurrency = createAsyncThunk(
     }
 );
 
+export const seekCurrency = createAsyncThunk(
+    "currency/seekCurrency",
+    async (seekedValue : string) => {
+        return (await axios.get<Currency[]>(`${API_URL}/currency/seekCurrency/${seekedValue}`)).data;
+    }
+);
+
+export const getLastSelectedCurrencyRate = createAsyncThunk(
+    "currency/getLastSelectedCurrencyRate",
+    async (currencyId : string) => {
+        return (await axios.get<number>(`${API_URL}/currency/getLastSelectedCurrencyRate/${currencyId}`)).data;
+    }
+);
+
 const initialState = {
     currencies : [],
-    selectedCurrency : null
+    selectedCurrency : null,
+    selectedCurrencyRate : 0
 } as {
     currencies : Currency[],
-    selectedCurrency : Currency | null
+    selectedCurrency : Currency | null,
+    selectedCurrencyRate : number
 };
 
 const currencySlice = createSlice({
@@ -35,6 +51,24 @@ const currencySlice = createSlice({
             state.currencies = action.payload;
         }),
         builder.addCase(getAllCurrencies.rejected, (state, action) => {
+            console.log(action.error);
+        }),
+        builder.addCase(getOneCurrency.fulfilled, (state, action:PayloadAction<Currency>) => {
+            state.selectedCurrency = action.payload;
+        }),
+        builder.addCase(getOneCurrency.rejected, (state, action) => {
+            console.log(action.error);
+        }),
+        builder.addCase(seekCurrency.fulfilled, (state, action:PayloadAction<Currency[]>) => {
+            state.currencies = action.payload;
+        }),
+        builder.addCase(seekCurrency.rejected, (state, action) => {
+            console.log(action.error);
+        }),
+        builder.addCase(getLastSelectedCurrencyRate.fulfilled, (state, action: PayloadAction<number>) => {
+            state.selectedCurrencyRate = action.payload;
+        }),
+        builder.addCase(getLastSelectedCurrencyRate.rejected, (state, action) => {
             console.log(action.error);
         })
     }

@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@canvasjs/react-charts": "^1.0.2",
     "@reduxjs/toolkit": "^2.2.1",
+    "@types/canvasjs": "^1.9.11",
+    "antd": "^5.14.2",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",

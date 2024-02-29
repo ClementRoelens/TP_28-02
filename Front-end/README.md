@@ -1,3 +1,37 @@
+# IMPORTANT
+
+Créer un fichier canvasjs.react.d.ts dans le module @canvasjs/react-charts
+Il faut tester mais ça supprime au moins l'erreur pour le moment
+
+```js
+import * as React from 'react';
+
+declare module '@canvasjs/react-charts' {
+  export interface Options {
+    // Définissez ici la structure des options du graphique, en fonction de vos besoins
+    // Consultez la documentation de CanvasJS pour voir toutes les options possibles
+  }
+
+  export interface ContainerProps {
+    width?: string;
+    position?: string;
+    height?: string;
+    // Autres propriétés nécessaires
+  }
+
+  export class CanvasJSChart extends React.Component<{
+    id?: string;
+    options?: Options;
+    containerProps?: ContainerProps;
+    onRef?: (chart: any) => void;
+  }> {}
+
+  export const CanvasJS: any;
+}
+```
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
