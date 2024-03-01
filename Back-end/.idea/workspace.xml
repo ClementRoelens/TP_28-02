@@ -5,25 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e4c78b-53c9-49ea-9da3-544cdc3c4ad0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/entity/UserCurrency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/repository/UserCurrencyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exchange/src/main/java/net/example/exchange/service/ExchangeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/market_user/src/main/java/net/example/market_user/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/controller/AssembleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/AssembleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/CurrencyDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/ExchangeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/service/CurrencyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/service/ExchangeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/currency/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/controller/CurrencyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/controller/CurrencyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/entity/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/entity/Currency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/repository/CurrencyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/repository/CurrencyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/currency/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exchange/src/main/java/net/example/exchange/controller/ExchangeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/src/main/java/net/example/exchange/controller/ExchangeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exchange/src/main/java/net/example/exchange/entity/Exchange.java" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/src/main/java/net/example/exchange/entity/Exchange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/exchange/src/main/java/net/example/exchange/repository/CurrencyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/exchange/src/main/java/net/example/exchange/repository/ExchangeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_user/src/main/java/net/example/market_user/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/market_user/src/main/java/net/example/market_user/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_user/src/main/java/net/example/market_user/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/market_user/src/main/java/net/example/market_user/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_user/src/main/java/net/example/market_user/repository/CurrencyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/market_user/src/main/java/net/example/market_user/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Conception/MCD.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Conception/MCD.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../database/bddbank.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../database/bddbank.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,15 +60,19 @@
     "Spring Boot.CurrencyApplication.executor": "Run",
     "Spring Boot.ExchangeApplication.executor": "Run",
     "Spring Boot.MarketUserApplication.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "back-end",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrateur/Downloads/TP_28-02/Back-end/market_user/src/main/java/net/example/market_user",
+    "last_opened_file_path": "C:/Users/tails/Documents/CDA_LILLE_17_JUILLET/Spring/correction_exercice_2_spring_reactive",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
     "vue.rearranger.settings.migration": "true"
@@ -102,6 +100,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ExchangeApplication">
+    <configuration name="AssembleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="assemble" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.assemble.AssembleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CurrencyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="currency" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="net.example.currency.CurrencyApplication" />
@@ -142,6 +147,8 @@
       <workItem from="1709127365162" duration="15000" />
       <workItem from="1709127388329" duration="9309000" />
       <workItem from="1709192898417" duration="24262000" />
+      <workItem from="1709282882400" duration="1090000" />
+      <workItem from="1709287837267" duration="2330000" />
     </task>
     <servers />
   </component>

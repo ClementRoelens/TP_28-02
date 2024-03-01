@@ -10,11 +10,13 @@
         <module name="currency" />
         <module name="market_user" />
         <module name="exchange" />
+        <module name="assemble" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="assemble" options="-parameters" />
       <module name="currency" options="-parameters" />
       <module name="exchange" options="-parameters" />
       <module name="market_user" options="-parameters" />
