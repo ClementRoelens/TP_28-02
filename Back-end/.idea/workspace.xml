@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30e4c78b-53c9-49ea-9da3-544cdc3c4ad0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/controller/AssembleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/AssembleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/CurrencyDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/ExchangeDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/service/CurrencyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/service/ExchangeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assemble/src/main/java/com/example/assemble/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/read.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/entity/Currency.java" beforeDir="false" afterPath="$PROJECT_DIR$/currency/src/main/java/net/example/currency/entity/Currency.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +137,7 @@
       <workItem from="1709127388329" duration="9309000" />
       <workItem from="1709192898417" duration="24262000" />
       <workItem from="1709282882400" duration="1090000" />
-      <workItem from="1709287837267" duration="2330000" />
+      <workItem from="1709287837267" duration="2815000" />
     </task>
     <servers />
   </component>
